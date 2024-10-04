@@ -1,0 +1,252 @@
+@font-face {
+    font-family: dafoe;
+    src: url(./Asset/police/MrDafoe-Regular.ttf);
+}
+
+@font-face {
+    font-family: arimo;
+    src: url(./Asset/police/Arimo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: lollita;
+    src: url(./Asset/police/LilitaOne-Regular.ttf);
+}
+
+*{
+
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Barre de Navigation  */
+
+.head{
+
+    height: auto;
+    width: auto;
+    background-color: rgb(246,230,217);
+
+    .nav{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+       
+    
+        .logo{
+    
+            img{
+    
+                height: auto;
+                width: 160px;
+                margin-right: 450px;
+                margin-top: 20px;
+              
+            }
+        }
+    
+        ul{
+            display: flex;
+            gap:40px;
+    
+    
+            li{
+                list-style: none;
+            }
+    
+            a{
+    
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                font-size: 17px;
+            }
+        }
+    
+        a:hover{
+            
+            color: rgb(212,149,86);
+
+        }
+    
+        .panier{
+    
+            img{
+    
+                height: auto;
+                width: 30px;
+                margin-left: 40px;
+               
+            }
+        }
+    }
+
+
+}
+
+.section1{
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    background-color: rgb(246,230,217);
+    margin-top: 0;
+    height: 590px;
+    padding-top: 75px;
+    /* padding-left: 100px; */
+
+
+    .image{
+
+        h1{
+
+            background-color: rgb(241,193,157);
+            border-radius: 500px;
+            height: 450px;
+            width: 450px;
+            display: flex;
+
+        }
+
+        img{
+
+            height: 580px;
+            width: 580px;
+            margin-top: -515px;
+            margin-left: -80px;
+           
+        }
+    }
+
+    .texte{
+
+        text-align: center;
+
+        h1{
+            font-family: arimo;
+            font-size: 35px;
+           font-weight: 100;
+           color: rgba(53, 52, 52, 0.529);
+        }
+
+        h2{
+            font-size: 200px;
+            font-family: lollita;
+            line-height: 0.8;
+            font-weight: 800px;
+        }
+
+        h3{
+
+            font-family: dafoe;
+            font-size: 150px;
+            color: rgb(232,149,83);
+            line-height: 0.1;
+
+        }
+    }
+
+
+}
+
+.section2{
+
+    h3{
+
+        text-align: center;
+        font-size: 30px;
+        text-decoration: underline rgb(232,149,83);
+        padding-top: 100px;
+        color: rgba(6, 6, 6, 0.711);
+    }
+  
+
+
+
+    .grid{
+
+        padding-top: 100px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 230px);
+        gap: 200px 20px; 
+        
+    
+        .box{
+    
+            height: 290px;
+            width: 230px;
+            background-color: #fdfdfd;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    
+        .image{
+    
+            height: 95%;
+            width: 95%;
+            border-radius: 15px;
+            background-size: cover;
+            
+    
+        }
+
+        .img1{
+            background-image: url(./Asset/images/1.png);
+        }
+        .img2{
+            background-image: url(./Asset/images/2.png);
+        }
+        .img3{
+            background-image: url(./Asset/images/3.png);
+        }
+        .img4{
+            background-image: url(./Asset/images/4.png);
+        }
+        .img5{
+            background-image: url(./Asset/images/5.png);
+        }
+        .img6{
+            background-image: url(./Asset/images/6.png);
+        }
+        .img7{
+            background-image: url(./Asset/images/7.png);
+        }
+        .img8{
+            background-image: url(./Asset/images/8.png);
+        }
+
+        h1{
+            font-size: 22px;
+            font-weight: 500;
+            padding-top: 300px;
+            color: rgba(0, 0, 0, 0.400);
+        }
+
+        h2{
+            font-size: 18px;
+            font-weight: 100;
+            line-height: 0.1;
+            color: rgba(0, 0, 0, 0.600);
+        }
+        
+        .box:hover{
+            height: 295px;
+            width: 235px;
+            background-color: #06060622;
+            transition: 0.4s;
+
+        }
+
+    }
+ 
+}
+

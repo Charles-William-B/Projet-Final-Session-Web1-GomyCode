@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+
+<head>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="./Asset/logo/caddie.png">
+<title> CheckPoint Shop</title>
+<script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- barre de navigation -->
+
+    <header>
+
+        <div class="head"> 
+
+            <div class="nav">
+
+                <!-- logo du site -->
+    
+                <div class="logo">
+    
+                    <a href="./index.html"> <img src="./Asset/logo/logo.png" alt="logo"></a>
+                </div>
+    
+                <ul>
+    
+                    <li> <a href=""> Home</a></li>
+                    <li> <a href=""> Produits</a></li>
+                    <li> <a href=""> A propos</a></li>
+                    <li> <a href=""> Contact</a></li>
+                </ul>
+    
+                <!-- panier d'achat -->
+    
+                <div class="panier">
+    
+                    <a href=""> <img src="./Asset/logo/panier achat.png" alt=""></a>
+                </div>
+    
+            </div>
+
+
+        </div>
+
+       
+
+        <!-- main -->
+
+
+    </header>
+
+    <main>
+
+        <h1>Mon Panier</h1>
+        <div id="panier">
+            <div class="article" data-prix="20">
+                <h2>Article 1</h2>
+                <p>Prix: <span class="prix">20</span>€</p>
+                <button class="minus">-</button>
+                <span class="quantite">1</span>
+                <button class="plus">+</button>
+                <button class="heart">❤️</button>
+                <button class="supprimer">Supprimer</button>
+            </div>
+            <div class="article" data-prix="15">
+                <h2>Article 2</h2>
+                <p>Prix: <span class="prix">15</span>€</p>
+                <button class="minus">-</button>
+                <span class="quantite">1</span>
+                <button class="plus">+</button>
+                <button class="heart">❤️</button>
+                <button class="supprimer">Supprimer</button>
+            </div>
+        </div>
+        <h3>Total: <span id="total">35</span>€</h3>
+        <script src="script.js"></script>
+
+    
+    </main>
+
+    <footer></footer>
+    
+</body>
+
+
+</html>
