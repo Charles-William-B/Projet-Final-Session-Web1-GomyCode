@@ -1,56 +1,61 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const articles = document.querySelectorAll('.article');
-    const totalElement = document.getElementById('total');
+// Sélection des éléments nécessaires
+const articles = document.querySelectorAll('.article');
+const totalElement = document.getElementById('total');
 
-    articles.forEach(article => {
-        const minusButton = article.querySelector('.minus');
-        const plusButton = article.querySelector('.plus');
-        const supprimerButton = article.querySelector('.supprimer');
-        const heartButton = article.querySelector('.heart');
-        const quantiteElement = article.querySelector('.quantite');
-        const prixElement = article.querySelector('.prix');
-        
-        let quantite = parseInt(quantiteElement.textContent);
-        const prix = parseFloat(prixElement.textContent);
+// Initialisation du total
+let total = 0;
 
-        // Fonction pour mettre à jour le total
-        const updateTotal = () => {
-            let total = 0;
-            articles.forEach(a => {
-                const qty = parseInt(a.querySelector('.quantite').textContent);
-                const price = parseFloat(a.dataset.prix);
-                total += qty * price;
-            });
-            totalElement.textContent = total.toFixed(2);
-        };
+// Fonction pour mettre à jour le total
+function updateTotal() {
+    totalElement.textContent = total;
+}
 
-        // Ajuster la quantité
-        plusButton.addEventListener('click', () => {
-            quantite++;
-            quantiteElement.textContent = quantite;
+// Ajout d'événements sur chaque article
+articles.forEach(article => {
+    const prix = parseInt(article.dataset.prix);
+    
+    // Gestion du clic sur le bouton "plus"
+    const plusButton = article.querySelector('.plus');
+    const minusButton = article.querySelector('.minus');
+    const quantiteSpan = article.querySelector('.quantite');
+    
+    plusButton.addEventListener('click', () => {
+        let quantite = parseInt(quantiteSpan.textContent);
+        quantite++;
+        quantiteSpan.textContent = quantite;
+        total += prix;
+        updateTotal();
+    });
+    
+    // Gestion du clic sur le bouton "moins"
+    minusButton.addEventListener('click', () => {
+        let quantite = parseInt(quantiteSpan.textContent);
+        if (quantite > 1) {
+            quantite--;
+            quantiteSpan.textContent = quantite;
+            total -= prix;
             updateTotal();
-        });
-
-        minusButton.addEventListener('click', () => {
-            if (quantite > 1) {
-                quantite--;
-                quantiteElement.textContent = quantite;
-                updateTotal();
-            }
-        });
-
-        // Supprimer l'article
-        supprimerButton.addEventListener('click', () => {
-            article.remove();
-            updateTotal();
-        });
-
-        // Aimer l'article
-        heartButton.addEventListener('click', () => {
-            heartButton.classList.toggle('aimé');
-        });
+        }
+    });
+    
+    // Gestion du clic sur le bouton "cœur"
+    const heartButton = article.querySelector('.heart');
+    heartButton.addEventListener('click', () => {
+        heartButton.classList.toggle('favori');
+        if (heartButton.classList.contains('favori')) {
+            heartButton.querySelector('img').src = './Asset/logo/coeur rouge.png'; // Image cœur rempli
+        } else {
+            heartButton.querySelector('img').src = './Asset/logo/coeur gris.png'; // Image cœur vide
+        }
     });
 
-    // Initialiser le total
-    updateTotal();
+    // Gestion du clic sur le bouton "supprimer"
+    const supprimerButton = article.querySelector('.supprimer');
+    supprimerButton.addEventListener('click', () => {
+        article.remove();
+        // Réduire le prix total basé sur la quantité
+        const quantite = parseInt(quantiteSpan.textContent);
+        total -= prix * quantite;
+        updateTotal();
+    });
 });

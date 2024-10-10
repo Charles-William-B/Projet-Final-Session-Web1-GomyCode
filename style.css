@@ -16,8 +16,7 @@
 *{
 
     margin: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 /* Barre de Navigation  */
@@ -34,7 +33,6 @@
         justify-content: center;
         align-items: center;
         margin-top: 0;
-       
     
         .logo{
     
@@ -44,14 +42,12 @@
                 width: 160px;
                 margin-right: 450px;
                 margin-top: 20px;
-              
             }
         }
     
         ul{
             display: flex;
-            gap:40px;
-    
+            gap:30px;
     
             li{
                 list-style: none;
@@ -69,7 +65,6 @@
         a:hover{
             
             color: rgb(212,149,86);
-
         }
     
         .panier{
@@ -83,9 +78,9 @@
             }
         }
     }
-
-
 }
+
+/* section1 accueil*/
 
 .section1{
 
@@ -97,8 +92,6 @@
     margin-top: 0;
     height: 590px;
     padding-top: 75px;
-    /* padding-left: 100px; */
-
 
     .image{
 
@@ -118,7 +111,6 @@
             width: 580px;
             margin-top: -515px;
             margin-left: -80px;
-           
         }
     }
 
@@ -146,12 +138,11 @@
             font-size: 150px;
             color: rgb(232,149,83);
             line-height: 0.1;
-
         }
     }
-
-
 }
+
+/* section2 accueil*/
 
 .section2{
 
@@ -164,9 +155,6 @@
         color: rgba(6, 6, 6, 0.711);
     }
   
-
-
-
     .grid{
 
         padding-top: 100px;
@@ -186,7 +174,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
+            transition: 0.5s;
         }
     
         .image{
@@ -195,8 +183,6 @@
             width: 95%;
             border-radius: 15px;
             background-size: cover;
-            
-    
         }
 
         .img1{
@@ -242,11 +228,580 @@
             height: 295px;
             width: 235px;
             background-color: #06060622;
-            transition: 0.4s;
-
         }
 
     }
  
 }
 
+/* section3 accueil*/
+
+.section3{
+
+    background-color: rgb(238,234,229);
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+    .image{
+
+        img{
+            height: 450px;
+            width: 450px;
+        }
+    }
+
+    .logo{
+
+        img{
+            height: 225px;
+            width: 400px;
+        }
+    }
+
+    h1{
+
+        text-align: center;
+        font-weight: 100;
+        font-size: 40px;
+        margin-bottom: -50px;
+        color: rgb(157,82,72);
+    }
+
+    h2{
+        text-align: center;
+        font-weight: 600;
+        font-size: 25px;
+        margin-top: -50px;
+        color: rgba(0, 0, 0, 0.525);
+
+    }
+
+    h3{
+        text-align: center;
+        font-weight: 200;
+        font-size: 20px;
+        color: rgb(157,82,72);
+        
+    }
+
+    a{
+
+        button{
+
+            height: 30px;
+            width: 80px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.292);
+            cursor: pointer;
+            border: none;
+            margin-left: 160px;
+            margin-top: 30px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+    }
+
+    button:hover{
+
+        transform: scale(1.4);
+        
+    }
+
+}
+
+/* section4 acueil Avis */
+
+.section4{
+
+    .flex{
+
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .bloc{
+
+            text-align: center;
+            height: 350px;
+            width: 290px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.300);
+            transition: 0.5s;
+            
+            h1{
+
+                font-size: 22px;
+                color: rgb(232,149,83);
+                font-weight: 300;
+                margin-top: 20px;
+    
+            }
+
+            h2{
+
+                font-size: 15px;
+                font-weight: 100;
+                color: rgba(0, 0, 0, 0.518);
+                margin-top: 15px;
+            }
+
+            h3{
+
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.564);
+            }
+
+            .etoile{
+                color: rgb(232,149,83);
+                margin-top: 15px;
+            }
+
+            img{
+                height: 60px;
+                width: 60px;
+                border-radius: 100px;
+                margin-top: 15px;
+            }
+
+        }
+
+        .bloc:hover{
+            transform: translateY(-10px);
+        }
+    }
+}
+
+/* footer */
+
+.footer{
+
+        padding-top: 50px;
+        height: 300px;
+        background-color: black;
+        text-align: center;
+
+    .blocx{
+
+        display: flex;
+        justify-content: center;
+        gap: 180px;
+        
+        h1{
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: rgba(232, 150, 83, 0.551);
+        }
+    
+        h2{
+            font-size: 14px;
+            font-weight: 100;
+            color: #514e4ed1;
+        }
+
+    }
+
+    .liner{
+        display: flex;
+        justify-content: center;
+    
+        h3{
+    
+            width: 1100px;
+            border: 1px solid rgb(232,149,83);
+            margin: auto;
+            margin-top: 50px;
+        }
+    }
+
+    h4{
+
+        color: #ffffff99;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+}
+
+/* deuxième page affichage Loro Piana*/
+
+.section7{
+
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+
+    h1{
+        font-size: 30px;
+        font-weight: 300;
+        color: rgb(212,149,86);
+        padding-top: 40px;
+    }
+
+    h2{
+
+        font-size: 30px;
+        font-weight: 300;
+        padding-top: 20px;
+    }
+
+    img{
+
+        padding-top: 30px;
+        height: 70%;
+        transition: 0.5s;
+    }
+
+    img:hover{
+
+        transform: scale(1.5);
+    }
+
+    .bouton{
+
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+
+        button{
+
+            height: 50px;
+            width: 50px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: -60px;
+        }
+
+    
+       .bt1{
+    
+        background-color: rgb(73,71,58);
+       } 
+    
+       .bt2{
+    
+        background-color: rgb(121,132,115);
+       }
+    
+       .bt3{
+    
+        background-color: rgb(135,35,30);
+       }
+    
+       .bt4{
+    
+        background-color: rgb(55,47,45);
+       }
+
+    }
+
+    .boutonbas{
+
+       button{
+
+        margin-top: 20px;
+        height: 40px;
+        width: 175px;
+        border: none;
+        background-color: rgb(157, 162, 157);
+        text-align: center;
+        align-items: center;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 900;
+        cursor: pointer;
+       }
+    }
+
+    button:hover{
+
+        background-color: green;
+    }
+
+}
+
+/* troisième page panier */
+
+#panier{
+
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .article{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .heart{
+
+            border: none;
+            background-color:#fff;
+        }
+    }
+   
+    h1{
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(212,149,86);
+    }
+
+    .image{
+      
+        img{
+
+            height: 150px;
+            width: 150px;
+        }
+
+        img:nth-child(1){ height: 50%;}
+    }
+
+    .validation{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        gap: 20px; 
+
+        h3{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        button{
+
+            height: 40px;
+            width: 175px;
+            border: none;
+            background-color: rgb(0,188,14);
+            text-align: center;
+            align-items: center;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    }
+}
+
+/* page remerciement */
+
+.content{
+
+    /* élément texte */
+
+    .textelement{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 15px;
+
+        h1{
+            margin-top: 20px;
+            color: rgb(212,149,86);
+       }
+    
+       button{
+        height: 35px;
+        width: 150px;
+        border-radius: 50px;
+        border: none;
+        justify-content: center;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.336);
+        margin-bottom: 25px;
+    
+       }
+
+       button:hover{
+
+        background-color: green;
+        color: #fff;
+       }
+    
+       a{    
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+       }
+
+       a:hover{
+        color: #ffff;
+       }
+    }
+
+    /* vidéo */
+
+   .videomerci{
+
+    display: flex;
+    justify-content: center;
+
+    video{
+
+        height: 60%;
+        width: 60%;
+    }
+   }
+}
+
+.section8{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+
+
+    .bloc1{
+
+        h1{
+            font-size: 20px;
+            font-weight: 100;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h2{
+
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            width: 300px;
+            box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.05);
+            gap: 10px;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        input{
+            border-radius: 8px;
+            height: 30px;
+            width: 250px;
+            border: 1px solid rgba(0, 0, 0, 0.353);
+            padding-left: 10px;
+        }
+
+        button{
+            height: 30px;
+            width: 150px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.353);
+            cursor: pointer;
+        }
+
+        button:hover{
+
+            background-color: rgba(0, 0, 0, 0.194);
+        }
+    }
+
+    .bloc2{
+
+        .image{
+
+            img{
+
+                height: 400px;
+                width: 500px;
+            }
+        }
+    }
+}
+
+/* page de contact */
+
+.section9{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+
+    .bloc1{
+
+        margin-left: -119px;
+
+        img{
+            height: 600px;
+            width: 700Px;
+        }
+    }
+
+    .bloc2{
+
+        h1{
+            font-size: 25px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        margin-top: 20px;
+
+        .form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 350px;
+            width: 300px;
+            gap: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.11);
+            margin-top: 20px;
+            padding-top: 20px;
+            border-radius: 10px;
+
+            input{
+
+                height: 30px;
+                width: 250px;
+                border-radius: 5px;
+                padding-left: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.300);
+            }
+
+            textarea{
+
+                height: 80px;
+                width: 250px;
+                border-radius: 5px;
+            }
+
+            button{
+
+                height: 30px;
+                width: 250px;
+                border-radius: 5px;
+                border: 1px solid rgba(0, 0, 0, 0.300);
+            }
+
+            button:hover{
+
+                background-color: rgba(0, 0, 0, 0.200);
+            }
+        }
+    }
+}
